@@ -7,7 +7,7 @@ const Contact = () => {
         <Grid columns={{ initial: '1', md: '2' }} gap="6">
           <Flex direction="column" gap="5">
             <Badge size="2">Contact Us</Badge>
-            <Heading size="7">Let's Discuss Your Project</Heading>
+            <Heading size="7">Let&apos;s Discuss Your Project</Heading>
             <Text size="3">
               Whether you&apos;re ready to start a new print project or have questions about our services, we&apos;re here to help. Reach out to our team for expert advice and quotes.
             </Text>
