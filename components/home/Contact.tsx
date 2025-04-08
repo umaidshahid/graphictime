@@ -9,7 +9,7 @@ const Contact = () => {
             <Badge size="2">Contact Us</Badge>
             <Heading size="7">Let's Discuss Your Project</Heading>
             <Text size="3">
-              Whether you're ready to start a new print project or have questions about our services, we're here to help. Reach out to our team for expert advice and quotes.
+              Whether you&apos;re ready to start a new print project or have questions about our services, we&apos;re here to help. Reach out to our team for expert advice and quotes.
             </Text>
             
             <Flex direction="column" gap="4" mt="3">

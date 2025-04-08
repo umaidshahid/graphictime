@@ -43,7 +43,7 @@ const Testimonials = () => {
               <Card key={index} size="3" style={{ flex: 1 }}>
                 <Flex direction="column" gap="4">
                   <Text size="5" style={{ fontStyle: 'italic' }}>
-                    "{testimonial.quote}"
+                    &ldquo;{testimonial.quote}&rdquo;
                   </Text>
                   <Flex gap="3" align="center">
                     <Avatar 

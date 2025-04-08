@@ -9,7 +9,7 @@ const About = () => {
             <Badge size="2">Our Story</Badge>
             <Heading size="7">A Tradition of Print Excellence</Heading>
             <Text size="3">
-              Founded in 1995, GraphicTime began as a small family-owned print shop with a passion for quality and craftsmanship. Over the decades, we've grown into a full-service printing company, embracing new technologies while maintaining our commitment to exceptional quality.
+              Founded in 1995, GraphicTime began as a small family-owned print shop with a passion for quality and craftsmanship. Over the decades, we&apos;ve grown into a full-service printing company, embracing new technologies while maintaining our commitment to exceptional quality.
             </Text>
             <Text size="3">
               Today, our team of 50+ printing professionals and designers work with state-of-the-art equipment to deliver print solutions that help businesses communicate, market, and grow.
