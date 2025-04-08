@@ -1,0 +1,279 @@
+.NavigationMenuRoot {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .NavigationMenuList {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .NavigationMenuTrigger,
+  .NavigationMenuLink {
+    padding: 8px 12px;
+    outline: none;
+    user-select: none;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 4px;
+    font-size: 15px;
+    color: var(--gray-11);
+    text-decoration: none;
+    transition: all 250ms;
+  }
+  
+  .NavigationMenuTrigger:hover,
+  .NavigationMenuLink:hover {
+    background-color: var(--gray-4);
+    color: var(--gray-12);
+  }
+  
+  .NavigationMenuTrigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--gray-11);
+  }
+  
+  .NavigationMenuLink {
+    display: block;
+    text-decoration: none;
+    line-height: 1;
+  }
+  
+  .NavigationMenuContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-duration: 250ms;
+    animation-timing-function: ease;
+  }
+  
+  .NavigationMenuContent[data-motion="from-start"] {
+    animation-name: enterFromLeft;
+  }
+  .NavigationMenuContent[data-motion="from-end"] {
+    animation-name: enterFromRight;
+  }
+  .NavigationMenuContent[data-motion="to-start"] {
+    animation-name: exitToLeft;
+  }
+  .NavigationMenuContent[data-motion="to-end"] {
+    animation-name: exitToRight;
+  }
+  
+  .NavigationMenuIndicator {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 10px;
+    top: 100%;
+    overflow: hidden;
+    z-index: 1;
+    transition: width, transform 250ms ease;
+  }
+  
+  .NavigationMenuIndicator[data-state="visible"] {
+    animation: fadeIn 200ms ease;
+  }
+  .NavigationMenuIndicator[data-state="hidden"] {
+    animation: fadeOut 200ms ease;
+  }
+  
+  .NavigationMenuViewport {
+    position: relative;
+    transform-origin: top center;
+    margin-top: 10px;
+    width: 100%;
+    background-color: var(--gray-2);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2);
+    height: var(--radix-navigation-menu-viewport-height);
+    transition: width, height, 300ms ease;
+  }
+  
+  .NavigationMenuViewport[data-state="open"] {
+    animation: scaleIn 200ms ease;
+  }
+  .NavigationMenuViewport[data-state="closed"] {
+    animation: scaleOut 200ms ease;
+  }
+  
+  .ViewportPosition {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    perspective: 2000px;
+  }
+  
+  .List {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 22px;
+    gap: 10px;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .ListItemLink {
+    display: block;
+    outline: none;
+    text-decoration: none;
+    user-select: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1;
+    transition: all 100ms;
+  }
+  
+  .ListItemLink:focus {
+    box-shadow: 0 0 0 2px var(--orange-7);
+  }
+  
+  .ListItemLink:hover {
+    background-color: var(--gray-3);
+  }
+  
+  .ListItemHeading {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    color: var(--gray-12);
+  }
+  
+  .ListItemText {
+    color: var(--gray-11);
+    line-height: 1.4;
+    font-weight: initial;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .CaretDown {
+    position: relative;
+    top: 1px;
+    transition: transform 250ms ease;
+  }
+  [data-state="open"] > .CaretDown {
+    transform: rotate(-180deg);
+  }
+  
+  .Arrow {
+    position: relative;
+    top: 70%;
+    background-color: var(--gray-2);
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-top-left-radius: 2px;
+  }
+  
+  .MobileLink {
+    display: block;
+    padding: 8px 0;
+    font-weight: 500;
+    color: var(--gray-11);
+    text-decoration: none;
+  }
+  
+  @keyframes enterFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes enterFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes exitToRight {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+  }
+  
+  @keyframes exitToLeft {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: rotateX(-30deg) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: rotateX(0deg) scale(1);
+    }
+  }
+  
+  @keyframes scaleOut {
+    from {
+      opacity: 1;
+      transform: rotateX(0deg) scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: rotateX(-10deg) scale(0.95);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+ 
