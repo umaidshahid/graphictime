@@ -4,19 +4,19 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Sarah Johnson",
-      company: "Marketing Director, Tech Innovations",
+      company: " Marketing Director, Tech Innovations",
       avatar: "/api/placeholder/60/60",
       quote: "The quality and attention to detail in GraphicTime's printing work has elevated our brand materials. Always on time and exceeding expectations."
     },
     {
       name: "Michael Chen",
-      company: "CEO, Design Studios Inc.",
+      company: " CEO, Design Studios Inc.",
       avatar: "/api/placeholder/60/60",
       quote: "We've partnered with GraphicTime for over 5 years now. Their consistent quality and collaborative approach make them an extension of our team."
     },
     {
       name: "Jessica Rodriguez",
-      company: "Event Planner, Conference Solutions",
+      company: " Event Planner, Conference Solutions",
       avatar: "/api/placeholder/60/60",
       quote: "When timelines are tight and quality is non-negotiable, GraphicTime delivers every time. Their large format printing for our events is flawless."
     }

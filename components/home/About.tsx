@@ -6,7 +6,7 @@ const About = () => {
       <Container size="4">
         <Grid columns={{ initial: '1', md: '2' }} gap="6" align="center">
           <Flex direction="column" gap="5">
-            <Badge size="2">Our Story</Badge>
+            <Badge size="3">Our Story</Badge>
             <Heading size="7">A Tradition of Print Excellence</Heading>
             <Text size="3">
               Founded in 1995, GraphicTime began as a small family-owned print shop with a passion for quality and craftsmanship. Over the decades, we&apos;ve grown into a full-service printing company, embracing new technologies while maintaining our commitment to exceptional quality.

@@ -6,7 +6,7 @@ const Contact = () => {
       <Container size="4">
         <Grid columns={{ initial: '1', md: '2' }} gap="6">
           <Flex direction="column" gap="5">
-            <Badge size="2">Contact Us</Badge>
+            <Badge size="3">Contact Us</Badge>
             <Heading size="7">Let&apos;s Discuss Your Project</Heading>
             <Text size="3">
               Whether you&apos;re ready to start a new print project or have questions about our services, we&apos;re here to help. Reach out to our team for expert advice and quotes.
@@ -17,27 +17,27 @@ const Contact = () => {
                 <Box>📞</Box>
                 <Box>
                   <Text weight="bold">Call Us</Text>
-                  <Text>(555) 123-4567</Text>
+                  <Text> (+92) 314 4684477</Text>
                 </Box>
               </Flex>
               <Flex gap="3" align="center">
                 <Box>📧</Box>
                 <Box>
                   <Text weight="bold">Email</Text>
-                  <Text>info@graphictime.com</Text>
+                  <Text> info@graphictime.com</Text>
                 </Box>
               </Flex>
-              <Flex gap="3" align="center">
+              {/* <Flex gap="3" align="center">
                 <Box>📍</Box>
                 <Box>
-                  <Text weight="bold">Visit Our Facility</Text>
+                  <Text weight="bold">Visit Our Facility </Text>
                   <Text>123 Print Avenue, Suite 400<br />Creativetown, CT 10101</Text>
                 </Box>
-              </Flex>
+              </Flex> */}
               <Flex gap="3" align="center">
                 <Box>⏰</Box>
                 <Box>
-                  <Text weight="bold">Business Hours</Text>
+                  <Text weight="bold">Business Hours </Text>
                   <Text>Monday-Friday: 8am-6pm<br />Saturday: 10am-2pm</Text>
                 </Box>
               </Flex>
