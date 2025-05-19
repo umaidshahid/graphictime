@@ -5,21 +5,21 @@ import { Badge, Box, Button, Card, Container, Flex, Grid, Heading, Text } from "
 const Portfolio = () => {
   const projects = [
     {
-      title: "Annual Report Design",
+      title: "Kraft Bags & Coffee Cups",
       client: "Financial Corp",
-      image: "/api/placeholder/600/400",
+      image: "/kraft-bag.jpg",
       tags: ["Offset Printing", "Design", "Binding"]
     },
     {
-      title: "Product Catalog",
+      title: "Custom Mailer Box Kit",
       client: "Luxury Goods Co.",
-      image: "/api/placeholder/600/400",
+      image: "/custom-mailbox-kit.jpg",
       tags: ["Digital Printing", "Design"]
     },
     {
-      title: "Event Branding",
+      title: "Custom Product Packaging",
       client: "Tech Conference",
-      image: "/api/placeholder/600/400",
+      image: "custom-prod-pkg.jpg",
       tags: ["Large Format", "Promotional"]
     },
     {
@@ -48,7 +48,7 @@ const Portfolio = () => {
         <Flex direction="column" align="center" gap="6">
           <Box mb="5">
             <Badge size="2">Our Portfolio</Badge>
-            <Heading size="8" mt="2">Featured Projects</Heading>
+            <Heading size="8" mt="2">Featured Products</Heading>
             <Text size="4" color="gray" mt="2">
               A showcase of our finest print and design work
             </Text>
@@ -68,7 +68,7 @@ const Portfolio = () => {
                     className="portfolio-image"
                     style={{ 
                       width: '100%', 
-                      height: '240px', 
+                      height: '380px', 
                       objectFit: 'cover',
                       transition: 'transform 0.3s ease'
                     }}
@@ -76,7 +76,7 @@ const Portfolio = () => {
                 </Box>
                 <Flex direction="column" gap="2" mt="3">
                   <Heading size="3">{project.title}</Heading>
-                  <Text size="2" color="gray">Client: {project.client}</Text>
+                  {/* <Text size="2" color="gray">Client: {project.client}</Text> */}
                   <Flex gap="2" mt="2" wrap="wrap">
                     {project.tags.map((tag, i) => (
                       <Badge key={i} variant="outline" radius="full">
@@ -89,7 +89,7 @@ const Portfolio = () => {
             ))}
           </Grid>
           
-          <Button size="3" mt="5">View All Projects</Button>
+          {/* <Button size="3" mt="5">View All Projects</Button> */}
         </Flex>
       </Container>
     </Box>

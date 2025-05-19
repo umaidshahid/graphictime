@@ -15,14 +15,14 @@ const About = () => {
               Today, our team of 50+ printing professionals and designers work with state-of-the-art equipment to deliver print solutions that help businesses communicate, market, and grow.
             </Text>
             <Flex gap="3" mt="2">
-              <Button variant="outline">Our Values</Button>
-              <Button variant="outline">Meet Our Team</Button>
+              {/* <Button variant="outline">Linkedin</Button>
+              <Button variant="outline">Instagram</Button> */}
             </Flex>
           </Flex>
           
           <Box style={{ position: 'relative', height: '100%', minHeight: '400px' }}>
             <img
-              src="/api/placeholder/800/600"
+              src="/machine.jpg"
               alt="Our printing facility"
               style={{ 
                 width: '100%', 

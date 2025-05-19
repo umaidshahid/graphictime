@@ -57,7 +57,7 @@ const Services = () => {
                   <Text size="8">{service.icon}</Text>
                   <Heading size="4">{service.title}</Heading>
                   <Text>{service.description}</Text>
-                  <Link href="#" mt="2">Learn more →</Link>
+                  {/* <Link href="#" mt="2">Learn more →</Link> */}
                 </Flex>
               </Card>
             ))}
