@@ -1,4 +1,4 @@
-import { Badge, Box, Card, Container, Flex, Grid, Heading, Link, Text } from "@radix-ui/themes";
+import { Badge, Box, Card, Container, Flex, Grid, Heading, /*Link,*/ Text } from "@radix-ui/themes";
 
 const Services = () => {
   const services = [

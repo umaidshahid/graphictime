@@ -1,43 +1,43 @@
 "use client";
 
-import { Badge, Box, Button, Card, Container, Flex, Grid, Heading, Text } from "@radix-ui/themes";
+import { Badge, Box, /*Button,*/ Card, Container, Flex, Grid, Heading, Text } from "@radix-ui/themes";
 
 const Portfolio = () => {
   const projects = [
     {
       title: "Kraft Bags & Coffee Cups",
-      client: "Financial Corp",
+      desc: "Eco-friendly packaging solutions perfect for cafés and takeout services",
       image: "/kraft-bag.jpg",
       tags: ["Offset Printing", "Design", "Binding"]
     },
     {
       title: "Custom Mailer Box Kit",
-      client: "Luxury Goods Co.",
+      desc: "Stylish and sturdy mailer boxes designed for premium unboxing experiences",
       image: "/custom-mailbox-kit.jpg",
       tags: ["Digital Printing", "Design"]
     },
     {
       title: "Custom Product Packaging",
-      client: "Tech Conference",
+      desc: "Tailored packaging options that enhance brand visibility and shelf appeal",
       image: "custom-prod-pkg.jpg",
       tags: ["Large Format", "Promotional"]
     },
     {
-      title: "Corporate Stationery",
-      client: "Legal Services Inc.",
-      image: "/api/placeholder/600/400",
+      title: "Custom T-Shirts",
+      desc: "High-quality printed apparel ideal for promotions, events, or brand merch",
+      image: "/custom-tshirt.jpg",
       tags: ["Letterpress", "Premium Papers"]
     },
     {
-      title: "Packaging Design",
-      client: "Organic Foods",
-      image: "/api/placeholder/600/400",
+      title: "Custom Brochures",
+      desc: "Professional brochures with detailed layouts and premium finishes for impactful storytelling",
+      image: "/custom-brochure.jpg",
       tags: ["Die-Cutting", "Special Finishes"]
     },
     {
-      title: "Magazine Publication",
-      client: "Lifestyle Media",
-      image: "/api/placeholder/600/400",
+      title: "Custom Posters",
+      desc: "Vibrant, high-resolution posters perfect for events, decor, and visual marketing",
+      image: "/custom-poster.jpg",
       tags: ["Offset Printing", "Binding"]
     }
   ];
@@ -76,7 +76,7 @@ const Portfolio = () => {
                 </Box>
                 <Flex direction="column" gap="2" mt="3">
                   <Heading size="3">{project.title}</Heading>
-                  {/* <Text size="2" color="gray">Client: {project.client}</Text> */}
+                  <Text size="3" color="gray">{project.desc}</Text>
                   <Flex gap="2" mt="2" wrap="wrap">
                     {project.tags.map((tag, i) => (
                       <Badge key={i} variant="outline" radius="full">
